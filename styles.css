@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    transition: text-shadow 200ms;
+    display: inline;
+    position: relative;
+    bottom: 70px;
+}
+
+h1:hover {
+    text-shadow: #ff7700 -3px 0;
+}
+
+
+body {
+
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: fixed radial-gradient(ellipse at top, #3e8bfe, #b7d4ff);
+    cursor: default;
+}
+
+
+.game-board {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+}
+
+.btn {
+    background-color: #1197cc;
+    box-shadow: #094c66 4px 4px 0px;
+    border-radius: 5px;
+    transition: transform 200ms, box-shadow 200ms;
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin: .2em;
+    position: relative;
+    top: 25px;
+}
+
+button:active {
+    transform: translatey(4px) translatex(4px);
+    box-shadow: #1197cc 0px 0px 0px;
+}
+
+#Rock {
+    cursor: url('./Images/fist.png'), auto;
+}
+
+#Paper {
+    cursor: url('./Images/five.png'), auto;
+}
+
+#Scissors {
+    cursor: url('./Images/two.png'), auto;
+}
+
+.endResults {
+    transition: transform 1000000ms;
+}
+
+#rst {
+    background-color: #87b7ff;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 7px;
+}
